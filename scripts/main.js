@@ -1,4 +1,6 @@
+
 import { KneelDiamonds } from "./KneelDiamonds.js"
+
 
 const mainContainer = document.querySelector("#container")
 
@@ -7,4 +9,9 @@ const renderAllHTML = () => {
 }
 
 renderAllHTML()
+
+document.addEventListener("stateChanged", event => {
+    
+    renderAllHTML()
+})
 
